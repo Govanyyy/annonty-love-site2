@@ -124,7 +124,7 @@ footer{margin-top:25px;text-align:center;font-size:13px;color:#bb7290}
     <h1>كل صورة وراها حكاية ❤️</h1>
     <p class="sub">دوسي على أي صورة عشان تشوفيها أكبر، واتفرجي على ذكرياتنا المصوّرة هنا.</p>
     <div class="gallery" id="galleryGrid"></div>
-    <p class="note">ولما تحبي تزودي ذكريات جديدة، ضيفي الصور والفيديوهات والأغاني في نفس مكان ملف index.html ❤️</p>
+    <p class="note"> كل ما نتصور نزود ذكريات جديدة، ولو حاجه عجبتك ابعتيلى يا قلب ابوكى علطول الصور والفيديوهات والأغانى يا نوور عينى ونضيفهم انا كل حاجه اذا كان صور او فيديوهات او اى ان كان فى الالبوم ده محفوره فى قلبى وعقلى لأخر نفس فى عمرى وهفضل كل شويه اوريها لعيالنا وعيال عيالنا علشان يعرفوا كد ايه ان امهم قمر وست البنات كلها والله وان فعلا هما قد ايه محظوظين ان معاهم احلى واجمل وارقق واطعم واحن ام فى الدنيا كلها ويفضلوا يشكرونى عليكى وعلى الورده اللى اختارتهالهم تكون امهم ودنيتهم كلها يا كتكوتى انتى يا قمرى ❤️</p>
     <button class="btn" data-go="final">آخر حاجة عايز أقولها… 💗</button>
   </div>
 </section>
@@ -159,7 +159,7 @@ photoFiles.forEach((src,i)=>{
 videoFiles.forEach((src,i)=>{
   const wrap=document.createElement('div'); wrap.className='wide';
   const v=document.createElement('video'); v.src=src; v.controls=true; v.playsInline=true; v.preload='metadata';
-  wrap.appendChild(v); const c=document.createElement('p'); c.className='caption'; c.textContent='فيديو من ذكرياتنا ❤️'; wrap.appendChild(c); grid.appendChild(wrap);
+  wrap.appendChild(v); const c=document.createElement('p'); c.className='caption'; c.textContent='هنا ساكنه ومحفوره فى قلبى احلى اوقات ❤️'; wrap.appendChild(c); grid.appendChild(wrap);
 });
 document.getElementById('closeLightbox').onclick=()=>document.getElementById('lightbox').classList.remove('open');
 document.getElementById('lightbox').onclick=e=>{if(e.target.id==='lightbox')e.currentTarget.classList.remove('open')};
