@@ -168,7 +168,7 @@ document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=
 function unlock(){const val=document.getElementById('password').value.trim();if(val==='22/4'){document.getElementById('error').textContent='';go('welcome')}else{document.getElementById('error').textContent='مش دي كلمة السر يا بنوتي 🙈 جربي تاني ❤️'}}
 document.getElementById('unlock').addEventListener('click',unlock);
 document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
-const start=new Date('2026-04-13T00:00:00+02:00').getTime();
+const start=new Date('2026-02-27T00:00:00+02:00').getTime();
 function updateCounter(){let diff=Math.max(0,Date.now()-start);let total=Math.floor(diff/1000);let days=Math.floor(total/86400);let hours=Math.floor((total%86400)/3600);let minutes=Math.floor((total%3600)/60);let seconds=total%60;document.getElementById('days').textContent=days;document.getElementById('hours').textContent=String(hours).padStart(2,'0');document.getElementById('minutes').textContent=String(minutes).padStart(2,'0');document.getElementById('seconds').textContent=String(seconds).padStart(2,'0')}
 updateCounter();setInterval(updateCounter,1000);
 const heartRoot=document.getElementById('hearts');
